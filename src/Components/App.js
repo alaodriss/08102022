@@ -11,9 +11,10 @@ function App() {
   return (
     <div className="App">
    
-      <Gallery />
+  
       <Navbar />
       <Sildebody />
+      <Gallery />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import '../Styles/Navbar.css';
 
-import logo from '../images/logo_kasa.png'
+import logo from '../Images/logo_kasa.png'
 
 class Navbar extends Component {
 

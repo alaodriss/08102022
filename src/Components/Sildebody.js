@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import '../Styles/Sildebody.css';
-import Background from '../images/Background.png'
+import Background from '../Images/Background.png'
 
 
 
