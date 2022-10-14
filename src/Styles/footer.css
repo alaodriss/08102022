@@ -1,0 +1,16 @@
+.footer_bg {
+    background-color: black;
+    height: 200px;
+}
+.footer_info > img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px  0 0 0;
+}
+
+.copyrt{
+    color: white;
+    text-align: center
+}

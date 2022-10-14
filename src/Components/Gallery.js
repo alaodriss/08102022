@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 
+import '../Styles/Gallery.css';
 class Gallery extends Component {
-  state = {
-    nameArry: [],
+  constructor(props) {
+  super(props)
+  this.state = {
+    myHome: [],
   };
+}
 
-  loadData() {
+  loadData = () => {
     fetch("./data/data.json").then((response) => response.json())
-    .then(data => { 
-      console.log(data);
+    .then(response => { 
+      console.log(response.logements);
       this.setState({
-        nameArry: data,
+        myHome: response.logements,
       });
       });
   }
@@ -22,9 +26,17 @@ class Gallery extends Component {
   }
 
   render() {
-    return <div>
+    return  ( 
+    <div className="cards_bg wrapper">
       
-    </div>;
+        {this.state.myHome.map(card => (
+        <div className="card" key={card.id}>
+          <img className="card_img" src={card.cover} alt=""/>
+          <p className="title"> {card.title}  </p>
+        </div>
+      ))}
+   </div>)
+
   }
 }
 export default Gallery;
