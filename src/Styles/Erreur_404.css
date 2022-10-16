@@ -1,0 +1,52 @@
+/* 404 */
+
+.number {
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    /* line-height: 142.6%; */
+    /* align-items: center; */
+    text-align: center;
+    color: #FF6060;
+  
+    position: absolute;
+    top: -4%;
+    left: 35%;
+color: #FF6060;
+}
+
+.text_404 > h2 {
+    position: absolute;
+    left: 26.49%;
+    right: -33.04%;
+    top: 68.18%;
+    bottom: 35.84%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 22.6%;
+    color: #ff6060;
+}
+.text_404 > .link_home {
+  position: absolute;
+  left: 40.14%;
+  right: 40.14%;
+  top: 81.93%;
+  bottom: 15.53%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* identical to box height, or 26px */
+
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+
+  color: #ff6060;
+}

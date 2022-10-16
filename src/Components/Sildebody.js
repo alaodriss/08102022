@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import '../Styles/Sildebody.css';
 import Background from '../Images/Background.png'
 

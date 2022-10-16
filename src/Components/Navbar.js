@@ -1,24 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../Styles/Navbar.css";
+import logo from "../Images/logo_kasa.png";
 
-import '../Styles/Navbar.css';
-
-import logo from '../Images/logo_kasa.png'
 
 class Navbar extends Component {
-
   render() {
-
     return (
-
-      <div className='navBar'>
-            <img src={logo} alt='logo' />
-
-            <ul className='Liste_menu'>
-                <li> <a href='#'> Accueil </a> </li>
-                <li> <a href='#'> A propos </a> </li>
-            </ul>
-      </div>
-    )
+ 
+        <div className="navBar">
+          <img src={logo} alt="logo" />
+          <nav className="Liste_menu">
+            <Link to="/">Accueil</Link>
+            <Link to="apropos">A propos</Link>
+          </nav>
+        </div>
+  
+    );
   }
 }
-export default Navbar
+export default Navbar;
