@@ -1,4 +1,0 @@
-   <Routes>
-        <Router path="/" element={<Sildebody />} />
-        <Router path="about" element={<Sildebody />} />
-      </Routes>

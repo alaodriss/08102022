@@ -6,6 +6,8 @@ import Background from '../Images/Background.png'
 
  function Sildebody() {
 
+
+  
   return (
 
     <div className='Silde'>

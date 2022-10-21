@@ -7,7 +7,7 @@ function DropDown(props) {
     function handleDropdown() {
         setToggleDropdown(!toggleDropdown);
     }
-    console.log(toggleDropdown);
+    // console.log(toggleDropdown);
 
     return (
         <div className='dropdown'>

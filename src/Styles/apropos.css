@@ -1,13 +1,12 @@
 .dropdown-container {
-  position: relative;
-  left: 19%;
+  margin: 38px -491px 39px 319px;
 }
 
 
 
 .dropdown {
     margin-bottom: 20px;
-    margin: 40px;
+   
   }
   .dropdown .dropdown-header {
     width: 50%;
@@ -26,6 +25,7 @@
     -webkit-animation: rotation1 0.5s;
             animation: rotation1 0.5s;
   }
+  
   .dropdown .dropdown-body {
     width: 50.5%;
     border-radius: 5px;

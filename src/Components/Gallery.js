@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import  LogementHome from "./LogementHome"
+
 
 import '../Styles/Gallery.css';
 class Gallery extends Component {
@@ -29,12 +31,9 @@ class Gallery extends Component {
     return  ( 
     <div className="cards_bg wrapper">
       
-        {this.state.myHome.map(card => (
-        <div className="card" key={card.id}>
-          <img className="card_img" src={card.cover} alt=""/>
-          <p className="title"> {card.title}  </p>
-        </div>
-      ))}
+        {this.state.myHome.map((card , index) => {
+        return <LogementHome  infos={card} key={'logement'+index}/>
+      })}
    </div>)
 
   }

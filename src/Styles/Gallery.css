@@ -6,13 +6,11 @@
   position: relative;
 }
 
-.card_img {
+.container-logement-home {
   width: 340px;
   height: 340px;
-  object-fit: cover;
   border-radius: 20px;
   box-shadow: 10px 5px 5px grey;
-
 }
 
 .cards_bg {
@@ -33,8 +31,8 @@
 }
 
 .title {
-  position: absolute;
-  top: 79%;
+  position: relative;
+  top: 87%;
   left: 6%;
   color: white;
   font-family: system-ui;
