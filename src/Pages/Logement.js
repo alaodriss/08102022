@@ -3,10 +3,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import Erreu404 from "../Pages/Erreur_404";
+//import Erreu404 from "../Pages/Erreur_404"; 
 import DropDown from "../Components/DropDown";
 import Tags from "../Components/Tags";
 import Footer from "../Components/Footer";
+import Lightbox from '../Components/Lightbox'
+
+import "../Styles/Logement.css";
 
 function Logement() {
   let { logementId } = useParams();
@@ -25,8 +28,8 @@ function Logement() {
       })
       .then((data) => {
         // setDataLogement(data);
-        let r = data.logements.filter((el) => el.id === logementId);
-        setDataLogement(r[0]);
+        let result = data.logements.filter((el) => el.id === logementId);
+        setDataLogement(result[0]);
 
         // console.log(r)
         // if(!r){
@@ -59,6 +62,7 @@ function Logement() {
   return (
     datalogement && (
       <div className="div-logements">
+                <Lightbox data={datalogement.pictures} image={datalogement.pictures[0]} />
         <div className="container-logements">
           <div className="div-title-logements">
             <div className="div-title-logements-city">
@@ -81,6 +85,7 @@ function Logement() {
                 return item <= datalogement.rating ? (
                   <i
                     key={"key-etoile" + index}
+                    style={{ color: "#FF6060" }}
                     className=" fa fa-solid fa-star"
                   ></i>
                 ) : (
@@ -95,17 +100,19 @@ function Logement() {
           </div>
         </div>
 
-        <div className="list-dropdown">
-          <div className="container-dropdown">
-            <DropDown title="Description" text={datalogement.description} />
-          </div>
-          <div className="container-dropdown">
-            <DropDown
-              title="Equipements"
-              text={datalogement.equipments.map((item, index) => {
-                return <p key={"p" + index}>{item}</p>;
-              })}
-            />
+        <div className="container-apropos">
+          <div className="list-dropdown">
+            <div className="container-dropdown">
+              <DropDown title="Description" text={datalogement.description} />
+            </div>
+            <div className="container-dropdown">
+              <DropDown
+                title="Equipements"
+                text={datalogement.equipments.map((item, index) => {
+                  return <p key={"p" + index}>{item}</p>;
+                })}
+              />
+            </div>
           </div>
         </div>
         <Footer />

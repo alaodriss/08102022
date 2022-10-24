@@ -1,0 +1,32 @@
+
+.div-lightbox {
+    position: relative;
+    font-size: 100px;
+    color: white;
+  }
+  .div-lightbox img {
+    width: 77%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0px 158px;
+  }
+  .div-lightbox .fa-angle-right {
+    top: 170px;
+    right: 212px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  .div-lightbox .fa-angle-left {
+    top: 170px;
+    left: 174px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  .div-lightbox p {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    font-size: 25px;
+    right: 500px;
+  }

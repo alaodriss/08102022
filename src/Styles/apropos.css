@@ -1,39 +1,41 @@
-.dropdown-container {
-  margin: 38px -491px 39px 319px;
+.container{
+  padding: 22px 308px;
+
 }
 
-
+.dropdown-container {
+  margin: 52px 0px;
+}
 
 .dropdown {
-    margin-bottom: 20px;
-   
-  }
-  .dropdown .dropdown-header {
-    width: 50%;
-    background-color: #FF6060;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    color: white;
-  }
-  .dropdown .dropdown-header .rotate2 {
-    -webkit-animation: rotation2 0.5s;
-            animation: rotation2 0.5s;
-  }
-  .dropdown .dropdown-header .rotate1 {
-    -webkit-animation: rotation1 0.5s;
-            animation: rotation1 0.5s;
-  }
-  
-  .dropdown .dropdown-body {
-    width: 50.5%;
-    border-radius: 5px;
-    background-color: #E5E5E5;
-    padding: 8px;
-  }
+  margin-bottom: 20px;
+}
+.dropdown .dropdown-header {
+ 
+  background-color: #ff6060;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+.dropdown .dropdown-header .rotate2 {
+  -webkit-animation: rotation2 0.5s;
+  animation: rotation2 0.5s;
+}
+.dropdown .dropdown-header .rotate1 {
+  -webkit-animation: rotation1 0.5s;
+  animation: rotation1 0.5s;
+}
 
+.dropdown .dropdown-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
+  background-color: #e5e5e5;
+  padding: 8px;
+}
 
 @-webkit-keyframes rotation1 {
   from {
@@ -69,11 +71,9 @@
   }
 }
 
-
 /***** Silde Img a propos */
 
-
-.slideImg>img {
+.slideImg > img {
   display: block;
   margin-left: auto;
   margin-right: auto;

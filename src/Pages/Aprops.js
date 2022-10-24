@@ -26,11 +26,13 @@ function Aprops() {
       <div className="slideImg">
         <img src={logo} alt="logo" />
       </div>
-      <div className="dropdown-container">
-        <DropDown title={titleFiabilite} text={textFiabilite} />
-        <DropDown title={titleRespect} text={textRespect} />
-        <DropDown title={titleSercice} text={textService} />
-        <DropDown title={titleSecurite} text={textSecurite} />
+      <div className="container">
+        <div className="dropdown-container">
+          <DropDown title={titleFiabilite} text={textFiabilite} />
+          <DropDown title={titleRespect} text={textRespect} />
+          <DropDown title={titleSercice} text={textService} />
+          <DropDown title={titleSecurite} text={textSecurite} />
+        </div>
       </div>
 
       <Footer />

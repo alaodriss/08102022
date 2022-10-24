@@ -10,7 +10,7 @@ function DropDown(props) {
     // console.log(toggleDropdown);
 
     return (
-        <div className='dropdown'>
+        <div className='dropdown test'>
             <div className='dropdown-header'>
                 <p>{props.title}</p>
                 {toggleDropdown ? <i onClick={handleDropdown} className="rotate1 fa fa-solid fa-angle-up"></i> : 
