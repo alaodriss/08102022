@@ -41,11 +41,42 @@
   position: relative;
   left: 27%;
 }
- .list-dropdown {
+.list-dropdown {
   display: flex;
   justify-content: space-around;
 }
 .container-dropdown {
-    padding: 50px 50px;
-    width: 420px;
+  padding: 50px 50px;
+  width: 420px;
+}
+
+@media screen and (max-width: 375px) {
+  .container-logements {
+    margin: 0 78px;
+  }
+  .p-title-logements {
+    font-size: 28px;
+  }
+  .host-name-logement img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .div-star-logement {
+    position: relative;
+    left: 45%;
+    top: 19px;
+    padding: 0;
+  }
+
+  .container-dropdown {
+    padding: 50px 70px;
+  }
+  .list-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-dropdown {
+    padding: 20px 0 0 70px;
+  }
 }

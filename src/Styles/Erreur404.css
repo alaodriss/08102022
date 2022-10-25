@@ -31,3 +31,33 @@
 
   color: #ff6060;
 }
+
+@media screen and (max-width: 375px) {
+  .text_404 > h2 {
+    margin: 0px !important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 122.6%;
+    color: #ff6060;
+    text-align: center;
+    position: relative;
+    left: 96px;
+  }
+  .number {
+    font-size: 204px;
+    margin: 113px 60px;
+  }
+  .text_404 > .link_home {
+    margin: 0 !important;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #ff6060;
+    position: absolute;
+    top: 132%;
+    left: 49%;
+    text-align: center;
+}
+
+}

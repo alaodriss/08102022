@@ -1,24 +1,48 @@
-
-.Silde{
-    position: relative;
-
+.Silde {
+  position: relative;
 }
 
-.Silde>h1{
-    position: absolute;
-    top: 30%;
-    left: 31%;
-    letter-spacing: 4px;
-    color: #fff;
-    text-shadow: 1px 1px 2px grey;
-
-
+.Silde > h1 {
+  position: absolute;
+  top: 30%;
+  left: 31%;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .ImgSilde {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-width: 375px) {
+  .ImgSilde {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
+    border-radius: 13px;
     box-shadow: 10px 5px 5px grey;
+    width: 487px;
+    height: 192px;
+    object-fit: cover;
+    margin: 42px 51px;
+  }
+  .Silde > h1 {
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 2px grey;
+    font-size: 27px;
+  }
+  .cards_bg {
+    padding:none;
+    background-color:none;
+    margin:none;
+    border-radius: none;
+    height: none;
+  }
 }

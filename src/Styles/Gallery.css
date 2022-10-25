@@ -14,20 +14,16 @@
 }
 
 .cards_bg {
-
   padding: 50px 10px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin: 50px 122px;
   border-radius: 10px;
   height: 100%;
-
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-
 }
 
 .title {
@@ -38,4 +34,30 @@
   font-family: system-ui;
   font-weight: 700;
   text-shadow: 1px 1px 2px grey;
+}
+
+@media screen and (max-width: 375px) {
+  .cards_bg {
+    padding: 0px 25px;
+    background-color: white;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-logement-home {
+    width: 500px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+    object-fit: cover;
+  }
+  .title {
+
+    font-size: 24px;
+}
 }

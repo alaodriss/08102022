@@ -1,16 +1,24 @@
 .footer_bg {
-    background-color: black;
-    height: 200px;
+  background-color: black;
+  height: 200px;
 }
 .footer_info > img {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px  0 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0 0 0;
 }
 
-.copyrt{
-    color: white;
-    text-align: center
+.copyrt {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .footer_bg {
+    background-color: black;
+    height: 200px;
+    width: 156%;
+    margin: 30px 0 0 0;
+  }
 }

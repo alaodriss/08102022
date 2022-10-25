@@ -11,8 +11,8 @@ class Navbar extends Component {
         <div className="navBar">
           <img src={logo} alt="logo" />
           <nav className="Liste_menu">
-            <Link to="/">Accueil</Link>
-            <Link to="apropos">A propos</Link>
+            <Link className='linkTop' to="/">Accueil</Link>
+            <Link className='linkTop' to="apropos">Apropos</Link>
           </nav>
         </div>
   

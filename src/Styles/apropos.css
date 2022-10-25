@@ -1,6 +1,5 @@
-.container{
+.container {
   padding: 22px 308px;
-
 }
 
 .dropdown-container {
@@ -11,7 +10,6 @@
   margin-bottom: 20px;
 }
 .dropdown .dropdown-header {
- 
   background-color: #ff6060;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -79,4 +77,21 @@
   margin-right: auto;
   border-radius: 50px;
   box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-width: 375px) {
+  .slideImg > img {
+    display: block;
+    border-radius: 13px;
+    box-shadow: 10px 5px 5px grey;
+    width: 487px;
+    height: 192px;
+    object-fit: cover;
+    margin: 42px 51px;
+  }
+  .container {
+    padding: 0px !important;
+    position: relative;
+    left: 101px;
+  }
 }
