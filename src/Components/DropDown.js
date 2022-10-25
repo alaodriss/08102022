@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 
+ //on a utilisé les props pour récupérer les données de dropdown
 function DropDown(props) {
 
+    // l'etat initial de DropDown = False = close
     const [toggleDropdown, setToggleDropdown] = useState(false)
 
+    // dans cette function de handleDropdown on a une methode setToggleDropdown qui a responsable sur etat initial 
     function handleDropdown() {
         setToggleDropdown(!toggleDropdown);
     }
-    // console.log(toggleDropdown);
 
     return (
+        // block pour encadre les données avec l'utilisation de la conditon d'event OnClick pour déclencher action de la fonction handleDropdown
         <div className='dropdown test'>
             <div className='dropdown-header'>
                 <p>{props.title}</p>

@@ -1,20 +1,13 @@
-import React from 'react'
-import '../Styles/Sildebody.css';
-import Background from '../Images/Background.png'
+import React from "react";
+import "../Styles/Sildebody.css";
+import Background from "../Images/Background.png";
 
-
-
- function Sildebody() {
-
-
-  
+function Sildebody() {
   return (
-
-    <div className='Silde'>
-        <img className='ImgSilde' src={Background} alt='Background'/>
-         <h1>Chez vous, partout et ailleurs</h1>
+    <div className="Silde">
+      <img className="ImgSilde" src={Background} alt="Background" />
+      <h1>Chez vous, partout et ailleurs</h1>
     </div>
-
-  )
+  );
 }
-export default Sildebody
+export default Sildebody;

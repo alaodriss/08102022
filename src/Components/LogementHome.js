@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function LogementHome(props) {
 
+function LogementHome(props) {
+  //ici on a reçu les données avec le props infos
+  //methode de destruction
   const { title, cover, id } = props.infos;
 
   return (
