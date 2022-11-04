@@ -3,18 +3,18 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-//import Erreu404 from "../Pages/Erreur_404"; 
+import Erreu404 from "../Pages/Erreur_404";
 import DropDown from "../Components/DropDown";
 import Tags from "../Components/Tags";
 import Footer from "../Components/Footer";
-import Lightbox from '../Components/Lightbox'
+import Lightbox from "../Components/Lightbox";
 
 import "../Styles/Logement.css";
 
 function Logement() {
   let { logementId } = useParams();
 
-  const [datalogement, setDataLogement] = useState();
+  const [datalogement, setdatalogement] = useState();
 
   useEffect(() => {
     fetch("../data/data.json", {
@@ -27,62 +27,62 @@ function Logement() {
         return res.json();
       })
       .then((data) => {
-        // setDataLogement(data);
-        let result = data.logements.filter((el) => el.id === logementId);
-        setDataLogement(result[0]);
-
-        // console.log(r)
-        // if(!r){
-        //   return <Erreu404 />
-        // }
+        setdatalogement(data);
       });
   }, []);
 
-  //recuperation de l'id du logement depuis le url
+  let result;
 
-  // console.log(logementId_slice)
+  if (datalogement) {
 
-  // let result ;
+    result = datalogement.logements.find((el) => {
 
-  // if (datalogement) {
-  //    result = datalogement.logements.find((el) => () => {
-  //     if (el.id === logementId_slice) {
+      if(el.id === logementId) {
+        return el ;
+      }
+    });
+    
+  }
 
-  //       return el;
+  if (datalogement && result === undefined) {
+    return <Erreu404 />;
+  }
 
-  //     }
+  // if (logementId !== result ) {
+  //  return <Erreu404 />
+  //}
 
-  //   });
-  // }if (datalogement && result === undefined) {
-  //   return <Erreu404 />;
-  // }
+  //recuperation de l'id du logement depuis le url (aprés le ?)
 
   let star = [1, 2, 3, 4, 5];
 
   return (
     datalogement && (
       <div className="div-logements">
-                <Lightbox data={datalogement.pictures} image={datalogement.pictures[0]} />
+        <Lightbox
+          data={result.pictures}
+          image={result.pictures[0]}
+        />
         <div className="container-logements">
           <div className="div-title-logements">
             <div className="div-title-logements-city">
-              <p className="p-title-logements">{datalogement.title}</p>
-              <p className="p-location">{datalogement.location}</p>
+              <p className="p-title-logements">{result.title}</p>
+              <p className="p-location">{result.location}</p>
             </div>
             <div className="div-tag-logement">
-              {datalogement.tags.map((item, index) => {
+              {result.tags.map((item, index) => {
                 return <Tags tag={item} key={"tag" + index} />;
               })}
             </div>
           </div>
           <div className="div-name-star-logement">
             <div className="host-name-logement">
-              <p>{datalogement.host.name}</p>
-              <img src={datalogement.host.picture} alt="" />
+              <p>{result.host.name}</p>
+              <img src={result.host.picture} alt="" />
             </div>
             <div className="div-star-logement">
               {star.map((item, index) => {
-                return item <= datalogement.rating ? (
+                return item <= result.rating ? (
                   <i
                     key={"key-etoile" + index}
                     style={{ color: "#FF6060" }}
@@ -103,12 +103,12 @@ function Logement() {
         <div className="container-apropos">
           <div className="list-dropdown">
             <div className="container-dropdown">
-              <DropDown title="Description" text={datalogement.description} />
+              <DropDown title="Description" text={result.description} />
             </div>
             <div className="container-dropdown">
               <DropDown
                 title="Equipements"
-                text={datalogement.equipments.map((item, index) => {
+                text={result.equipments.map((item, index) => {
                   return <p key={"p" + index}>{item}</p>;
                 })}
               />
