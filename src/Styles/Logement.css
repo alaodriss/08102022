@@ -96,11 +96,17 @@
     width: 85%;
   }
   .host-name-logement {
-    display: flex;
-    position: absolute;
-    left: 59%;
-    top: 198%;
+       display: flex;
+    position: relative;
+    left: -54%;
+    top: 247px;
   }
+  .div-star-logement {
+    /* padding: 18px 69px; */
+    position: relative;
+    left: 94%;
+    top: -56px;
+}
 }
 
 
@@ -150,9 +156,9 @@
   }
   .host-name-logement {
     display: flex;
-    position: absolute;
-    left: 106%;
-    top: 198%;
+    position: relative;
+    left: 81%;
+    top: 231px;
   }
 }
 
@@ -201,8 +207,8 @@
 
   .host-name-logement {
     display: flex;
-    position: absolute;
-    /* left: 109%; */
-    top: 124%;
+    position: relative;
+    left: 93%;
+    top: 267px;
 }
 }
