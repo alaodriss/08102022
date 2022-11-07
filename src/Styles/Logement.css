@@ -198,4 +198,11 @@
     width: 32px;
     height: 32px;
   }
+
+  .host-name-logement {
+    display: flex;
+    position: absolute;
+    /* left: 109%; */
+    top: 124%;
+}
 }

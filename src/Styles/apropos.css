@@ -1,12 +1,12 @@
 .container {
   /* padding: 22px 308px; */
-  width: 85%;
-  margin: 0px 0 0 113px;
+  width: 86%;
+  margin: 9px 118px
   
 }
 
 .dropdown-container {
-  margin: 52px 0px;
+  margin: 52px 46px;
 }
 
 .dropdown {
@@ -80,7 +80,7 @@
   margin-right: auto;
   border-radius: 50px;
   box-shadow: 10px 5px 5px grey;
-  width: 88%;
+  width: 85%;
 }
 
 

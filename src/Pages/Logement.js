@@ -31,6 +31,8 @@ function Logement() {
       });
   }, []);
 
+  //recuperation de l'id du logement depuis le url (aprés le ?)
+
   let result;
 
   if (datalogement) {
@@ -47,12 +49,6 @@ function Logement() {
   if (datalogement && result === undefined) {
     return <Erreu404 />;
   }
-
-  // if (logementId !== result ) {
-  //  return <Erreu404 />
-  //}
-
-  //recuperation de l'id du logement depuis le url (aprés le ?)
 
   let star = [1, 2, 3, 4, 5];
 

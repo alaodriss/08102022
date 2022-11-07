@@ -4,7 +4,7 @@
   color: white;
 }
 .div-lightbox img {
-  width: 81%;
+  width: 86%;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
@@ -12,13 +12,13 @@
 }
 .div-lightbox .fa-angle-right {
   top: 170px;
-  right: 183px;
+  right: 160px;
   margin-left: 10px;
   position: absolute;
 }
 .div-lightbox .fa-angle-left {
   top: 170px;
-  left: 174px;
+  left: 160px;
   margin-left: 10px;
   position: absolute;
 }
