@@ -20,6 +20,38 @@
   width: 88%;
 }
 
+
+
+
+@media screen and (max-width: 780px) {
+  .ImgSilde {
+    display: block;
+    border-radius: 13px;
+    box-shadow: 10px 5px 5px grey;
+    width: 590px;
+    height: 192px;
+    object-fit: cover;
+    margin: 42px 96px;
+  }
+  .Silde > h1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 2px grey;
+    font-size: 20px;
+  }
+  .cards_bg {
+    padding:none;
+    background-color:none;
+    margin:none;
+    border-radius: none;
+    height: none;
+  }
+}
+
+
 @media screen and (max-width: 375px) {
   .ImgSilde {
     display: block;
@@ -28,7 +60,7 @@
     width: 487px;
     height: 192px;
     object-fit: cover;
-    margin: 42px 51px;
+    margin: 42px 63px;
   }
   .Silde > h1 {
     position: absolute;

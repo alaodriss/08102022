@@ -4,15 +4,15 @@
   color: white;
 }
 .div-lightbox img {
-  width: 82%;
-  height: 415px;
+  width: 81%;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 0px 158px;
+  margin: 0px 131px;
 }
 .div-lightbox .fa-angle-right {
   top: 170px;
-  right: 215px;
+  right: 183px;
   margin-left: 10px;
   position: absolute;
 }
@@ -30,25 +30,52 @@
   right: 500px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .div-lightbox img {
-    width: 492px;
-    /* height: 405px; */
+    width: 626px;
+    height: 415px;
     object-fit: cover;
     border-radius: 10px;
-    margin: 0px 41px;
+    margin: 0px 0px;
   }
   .div-lightbox .fa-angle-left {
     left: 42px;
   }
   .div-lightbox .fa-angle-right {
-
-    right: -163px;
- 
+    right: 32px;
   }
   .div-lightbox p {
-
-    left: 76%;
-  
+    left: 45%;
+  }
+  .div-lightbox {
+    margin: 0 66px;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .div-lightbox .fa-angle-right {
+    right: -209px;
+  }
+  .div-lightbox p {
+    left: 84%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .div-lightbox img {
+    width: 492px;
+    /* height: 405px; */
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+  .div-lightbox .fa-angle-left {
+    left: 42px;
+  }
+  .div-lightbox .fa-angle-right {
+    right: -225px;
+  }
+  .div-lightbox p {
+    left: 101%;
+  }
 }

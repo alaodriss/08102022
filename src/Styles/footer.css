@@ -1,6 +1,7 @@
 .footer_bg {
   background-color: black;
   height: 200px;
+  width: 100%;
 }
 .footer_info > img {
   display: block;
@@ -14,11 +15,31 @@
   text-align: center;
 }
 
+@media screen and (max-width: 780px) {
+  .footer_bg {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer_bg {
+    background-color: black;
+    height: 200px;
+    width: 152%;
+    margin: 30px 0 0 0;
+  }
+}
+
+
 @media screen and (max-width: 375px) {
   .footer_bg {
     background-color: black;
     height: 200px;
-    width: 156%;
+    width: 165%;
     margin: 30px 0 0 0;
   }
+  
 }
