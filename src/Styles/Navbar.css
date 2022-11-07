@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px  175px;
+    margin: 60px  128px;
 }
 
 .Liste_menu  {
@@ -16,6 +16,7 @@
     color: #FF6060;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
 
 

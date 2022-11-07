@@ -44,10 +44,11 @@
 .list-dropdown {
   display: flex;
   justify-content: space-around;
+  padding: 0 89px;
 }
 .container-dropdown {
   padding: 50px 50px;
-  width: 420px;
+  width: 40%;
 }
 
 @media screen and (max-width: 375px) {

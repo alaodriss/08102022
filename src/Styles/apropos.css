@@ -1,5 +1,7 @@
 .container {
-  padding: 22px 308px;
+  /* padding: 22px 308px; */
+  width: 85%;
+  margin: 0px 0 0 142px;
 }
 
 .dropdown-container {
@@ -77,6 +79,7 @@
   margin-right: auto;
   border-radius: 50px;
   box-shadow: 10px 5px 5px grey;
+  width: 88%;
 }
 
 @media screen and (max-width: 375px) {
