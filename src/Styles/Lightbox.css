@@ -4,11 +4,11 @@
   color: white;
 }
 .div-lightbox img {
-  width: 86%;
-  height: 400px;
+  width: 95%;
+  height: 415px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 0px 131px;
+  margin: 0px 33px;
 }
 .div-lightbox .fa-angle-right {
   top: 170px;
