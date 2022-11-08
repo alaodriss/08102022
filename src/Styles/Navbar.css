@@ -21,21 +21,23 @@ a {
 }
 
 @media screen and (max-width: 780px) {
-  .linkTop {
-    font-size: 25px;
-  }
+
+  .navBar {
+
+    margin: 60px 26px;
+}
 }
 
-@media screen and (max-width: 480px) {
-  .Liste_menu,
-  li,
-  a {
-    padding: 0px 39px;
-  }
-  .linkTop {
-    font-size: 25px;
-  }
+ @media screen and (max-width: 480px) {
+  .navBar {
+
+    display: flex;
+    flex-direction: column;
 }
+.Liste_menu{
+  padding: 20px 0;
+}
+} 
 
 @media screen and (max-width: 375px) {
   .navBar {

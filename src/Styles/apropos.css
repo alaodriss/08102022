@@ -78,7 +78,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 10px 5px 5px grey;
   width: 85%;
 }
@@ -93,16 +93,14 @@
     width: 85%;
     height: 192px;
     object-fit: cover;
-    margin: 0 71px;
-
   }
   .container {
     position: relative;
-    margin: 0px 0 0 64px;
+    right: 65px;
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .slideImg > img {
     display: block;
     border-radius: 13px;
@@ -139,4 +137,4 @@
     width: 130%;
     margin: 0px 0 0 -31px;
   }
-}
+} */

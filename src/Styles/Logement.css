@@ -88,19 +88,24 @@
     width: 103%;
   }
 
-  .div-name-star-logement{
+  .div-name-star-logement {
     display: flex;
     flex-direction: row-reverse;
-  } 
+    display: block;
+  }
   .div-star-logement {
     display: flex;
-    position: absolute;
-    left: 4%;
-    top: 116%;
+    left: -112px;
+  }
+  .host-name-logement {
+    display: flex;
+    top: 28%;
+    position: relative;
+    bottom: -85px;
+    justify-content: flex-end;
+  }
 }
-
-}
-
+/* 
 @media screen and (max-width: 480px) {
   .container-logements {
     margin: 0 79px;
@@ -175,4 +180,4 @@
   .container-dropdown {
     padding: 20px 0;
   }
-}
+} */

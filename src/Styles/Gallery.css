@@ -60,35 +60,7 @@
   }
 
   .container-logement-home {
-    width: 590px;
-    height: 440px;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px grey;
-    object-fit: cover;
-  }
-  .title {
-
-    font-size: 24px;
-}
-}
-
-
-
-@media screen and (max-width: 375px) {
-  .cards_bg {
-    padding: 0px 25px;
-    background-color: white;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .container-logement-home {
-    width: 500px;
+    width: 100%;
     height: 440px;
     border-radius: 20px;
     box-shadow: 10px 5px 5px grey;

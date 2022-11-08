@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .div-lightbox img {
     width: 170%;;
   }
@@ -74,7 +74,6 @@
 @media screen and (max-width: 375px) {
   .div-lightbox img {
     width: 492px;
-    /* height: 405px; */
     object-fit: cover;
     border-radius: 10px;
 
@@ -88,4 +87,4 @@
   .div-lightbox p {
     left: 101%;
   }
-}
+} */

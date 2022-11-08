@@ -5,7 +5,7 @@
 .Silde > h1 {
   position: absolute;
   top: 30%;
-  left: 31%;
+  left:13%;
   letter-spacing: 4px;
   color: #fff;
   text-shadow: 1px 1px 2px grey;
@@ -31,16 +31,15 @@
     width: 77%;
     height: 192px;
     object-fit: cover;
-    margin: 42px 96px;
   }
   .Silde > h1 {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 21%;
     letter-spacing: 4px;
     color: #fff;
     text-shadow: 1px 1px 2px grey;
-    font-size: 20px;
+    font-size: 18px;
   }
   .cards_bg {
     padding:none;
@@ -51,7 +50,7 @@
   }
 }
 
-
+/* 
 @media screen and (max-width: 375px) {
   .ImgSilde {
     display: block;
@@ -78,4 +77,4 @@
     border-radius: none;
     height: none;
   }
-}
+} */
