@@ -21,10 +21,6 @@ a {
 }
 
 @media screen and (max-width: 780px) {
-  .navBar {
-    margin: 56px;
-  }
-
   .linkTop {
     font-size: 25px;
   }
