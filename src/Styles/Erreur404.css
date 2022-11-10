@@ -13,13 +13,14 @@
 }
 
 .text_404 > h2 {
-  margin: 65px 283px;
+  margin: 65px 0;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   /* line-height: 22.6%; */
   color: #ff6060;
+  text-align: center;
 }
 .text_404 > h3 {
   text-align: center
