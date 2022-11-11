@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 780px) {
   .container-logements {
-    margin: 0 140px;
+    margin: 0 98px -61px 126px;
     display: flow-root;
   }
   .p-title-logements {
@@ -95,13 +95,13 @@
   }
   .div-star-logement {
     display: flex;
-    left: -112px;
+    left: -111px;
+    top: -88px;
   }
   .host-name-logement {
     display: flex;
     top: 28%;
     position: relative;
-    bottom: -85px;
     justify-content: flex-end;
   }
 }
@@ -110,9 +110,14 @@
 {
   .host-name-logement {
    
-    position: relative; 
-    bottom: -35px;
     justify-content: flex-end;
+}
+
+
+.div-star-logement {
+  display: flex;
+  left: -111px;
+  top: -48px;
 }
 
 }
