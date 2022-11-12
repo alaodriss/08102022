@@ -21,23 +21,24 @@ a {
 }
 
 @media screen and (max-width: 780px) {
-
   .navBar {
-
     margin: 60px 26px;
-}
+  }
+
+  img {
+    width: 150px;
+  }
 }
 
- @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .navBar {
-
     display: flex;
     flex-direction: column;
+  }
+  .Liste_menu {
+    padding: 20px 0;
+  }
 }
-.Liste_menu{
-  padding: 20px 0;
-}
-} 
 
 @media screen and (max-width: 375px) {
   .navBar {
@@ -45,10 +46,16 @@ a {
   }
 
   .linkTop {
-    font-size: 25px;
-  }
-
-  .Liste_menu, li, a {
-    padding: 0 11px;
+    font-size: 14px;
+    margin: 32px 0px 0 12px;
 }
+
+  .Liste_menu,
+  li,
+  a {
+    padding: 0 11px;
+  }
+  img {
+    width: 120px;
+  }
 }

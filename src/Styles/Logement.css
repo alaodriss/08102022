@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 780px) {
   .container-logements {
-    margin: 0 140px;
+    margin: 0 70px;
     display: flow-root;
   }
   .p-title-logements {
@@ -74,6 +74,7 @@
   .list-dropdown {
     display: flex;
     flex-direction: column;
+    padding: 0 27px;
   }
   .container-dropdown {
     padding: 20px 0;
@@ -91,28 +92,33 @@
   .div-name-star-logement {
     display: flex;
     flex-direction: row-reverse;
-    display: block;
-  }
+    /* display: inline-block; */
+    justify-content: space-evenly;
+}
+  
   .div-star-logement {
     display: flex;
-    left: -112px;
-  }
-  .host-name-logement {
-    display: flex;
-    top: 28%;
+    padding: 18px 69px;
     position: relative;
-    bottom: -85px;
-    justify-content: flex-end;
+    left: -24%;
+    top: 36px;
+    
   }
-}
-
-@media screen and (max-width: 480px)
-{
-  .host-name-logement {
-   
-    position: relative; 
-    bottom: -35px;
-    justify-content: flex-end;
-}
 
 }
+
+@media screen and (max-width: 350px) {
+
+  .div-star-logement {
+    display: flex;
+    padding: 18px 69px;
+    position: relative;
+    left: -24%;
+    top: -29px;
+}
+.div-name-star-logement {
+  display: block;
+}
+
+}
+

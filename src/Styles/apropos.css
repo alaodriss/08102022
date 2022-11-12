@@ -1,12 +1,11 @@
 .container {
   /* padding: 22px 308px; */
-  width: 86%;
-  margin: 9px 103px
+  width: 9px 103px
   
 }
 
 .dropdown-container {
-  margin: 52px 46px;
+  margin: 50px 89px;
 }
 
 .dropdown {
@@ -80,7 +79,7 @@
   margin-right: auto;
   border-radius: 10px;
   box-shadow: 10px 5px 5px grey;
-  width: 85%;
+  width: 91%;
 }
 
 
@@ -95,9 +94,13 @@
     object-fit: cover;
   }
   .container {
-    position: relative;
-    right: 65px;
+    width: 96%;
+    margin: 9px AUTO;
   }
+
+  .dropdown-container {
+    margin: 50px 50px;
+}
 }
 
 /* @media screen and (max-width: 480px) {

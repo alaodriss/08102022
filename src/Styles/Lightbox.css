@@ -36,23 +36,25 @@
     height: 415px;
     object-fit: cover;
     border-radius: 10px;
-    margin: 0px 0px;
+    margin: 0;
   }
   .div-lightbox .fa-angle-left {
-    left: 42px;
+    left: 20px;
   }
   .div-lightbox .fa-angle-right {
-    right: 7%;
+    right: 20px;
   }
   .div-lightbox p {
     left: 45%;
+    right: 0px;
   }
   .div-lightbox {
-    margin: 0 66px;
+    margin: 0 10px;
   }
   .div-title-logements{
     margin: 0 -46px;
   }
+
 }
 
 /* @media screen and (max-width: 480px) {

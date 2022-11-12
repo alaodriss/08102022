@@ -3,12 +3,14 @@
 }
 
 .Silde > h1 {
-  position: absolute;
-  top: 30%;
-  left:13%;
+  position: relative;
+  top: -153px;
+  /* left: 13%; */
   letter-spacing: 4px;
   color: #fff;
   text-shadow: 1px 1px 2px grey;
+  text-align: center;
+  padding: -71Px 10px;
 }
 
 .ImgSilde {
@@ -21,21 +23,19 @@
 }
 
 
-
-
 @media screen and (max-width: 780px) {
   .ImgSilde {
     display: block;
     border-radius: 13px;
     box-shadow: 10px 5px 5px grey;
-    width: 77%;
+    width: 87%;
     height: 192px;
     object-fit: cover;
   }
   .Silde > h1 {
     position: absolute;
     top: 30%;
-    left: 21%;
+    left: 15%;
     letter-spacing: 4px;
     color: #fff;
     text-shadow: 1px 1px 2px grey;
@@ -48,4 +48,22 @@
     border-radius: none;
     height: none;
   }
+}
+@media screen and (max-width: 430px){
+.Silde > h1 {
+    position: absolute;
+    top: 30%;
+    left: 19%;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 2px grey;
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 310px){
+.Silde > h1 {
+
+    letter-spacing: 6px;                 
+    font-size: 16px;
+}
 }
