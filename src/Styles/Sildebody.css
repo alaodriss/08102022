@@ -5,12 +5,11 @@
 .Silde > h1 {
   position: relative;
   top: -153px;
-  /* left: 13%; */
   letter-spacing: 4px;
   color: #fff;
   text-shadow: 1px 1px 2px grey;
   text-align: center;
-  padding: -71Px 10px;
+  padding: -71px 10px;
 }
 
 .ImgSilde {
@@ -33,13 +32,15 @@
     object-fit: cover;
   }
   .Silde > h1 {
-    position: absolute;
-    top: 30%;
-    left: 15%;
+       /* position: absolute; */
+    /* top: 30%; */
+    /* left: 15%; */
     letter-spacing: 4px;
     color: #fff;
     text-shadow: 1px 1px 2px grey;
     font-size: 18px;
+    text-align: center;
+    padding: 30px 0 0 0;
   }
   .cards_bg {
     padding:none;

@@ -44,18 +44,15 @@
   text-shadow: 1px 1px 2px grey;
 }
 
-
-
 @media screen and (max-width: 780px) {
   .cards_bg {
     background-color: white;
     margin: 0;
     border-radius: 0;
   }
-  /* .wrapper a {
-    padding: 0 10px ;
-
-} */
+  .wrapper a {
+    padding: 0 10px;
+  }
 
   .wrapper {
     display: grid;
@@ -70,7 +67,10 @@
     object-fit: cover;
   }
   .title {
-
     font-size: 16px;
-}
+  }
+
+  .cards_bg {
+    padding: 0;
+  }
 }
